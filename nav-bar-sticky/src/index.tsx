@@ -6,7 +6,11 @@ import Root from './Root';
 import ErrorPage from './ErrorPage';
 import About from './About';
 import reportWebVitals from './reportWebVitals';
-// don't add child components as children
+/*
+ ** don't add paths as children of a root path
+ ** don't add / before a value of a child path 
+ ** as it's not going to be relative to the root path
+*/
 const router = createBrowserRouter([
   {
     path: '/',
