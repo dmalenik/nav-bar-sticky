@@ -1,5 +1,5 @@
-import './Root.css';
 import Navigation from './Navigation';
+import './Root.css';
 
 const Root = () => {
   return (
