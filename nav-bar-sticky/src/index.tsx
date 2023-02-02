@@ -5,6 +5,8 @@ import './index.css';
 import Root from './Root';
 import ErrorPage from './ErrorPage';
 import About from './About';
+import Offer from './Offer';
+import Contact from './Contact';
 import reportWebVitals from './reportWebVitals';
 /*
  ** don't add paths as children of a root path
@@ -23,11 +25,11 @@ const router = createBrowserRouter([
   },
   {
     path: 'offer',
-    element: <div>Welcome to the Offer section!</div>,
+    element: <Offer />,
   },
   {
     path: 'contact',
-    element: <div>Welcome to the Contact section!</div>,
+    element: <Contact />,
   },
 ]);
 const root = ReactDOM.createRoot(
