@@ -8,9 +8,9 @@ import About from './About';
 import reportWebVitals from './reportWebVitals';
 /*
  ** don't add paths as children of a root path
- ** don't add / before a value of a child path 
+ ** don't add / before a value of a child path
  ** as it's not going to be relative to the root path
-*/
+ */
 const router = createBrowserRouter([
   {
     path: '/',
@@ -20,6 +20,14 @@ const router = createBrowserRouter([
   {
     path: 'about-us',
     element: <About />,
+  },
+  {
+    path: 'offer',
+    element: <div>Welcome to the Offer section!</div>,
+  },
+  {
+    path: 'contact',
+    element: <div>Welcome to the Contact section!</div>,
   },
 ]);
 const root = ReactDOM.createRoot(
