@@ -8,11 +8,7 @@ import About from './About';
 import Offer from './Offer';
 import Contact from './Contact';
 import reportWebVitals from './reportWebVitals';
-/*
- ** don't add paths as children of a root path
- ** don't add / before a value of a child path
- ** as it's not going to be relative to the root path
- */
+
 const router = createBrowserRouter([
   {
     path: '/',
