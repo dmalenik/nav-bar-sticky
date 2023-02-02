@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Navigation.css';
 
 const Navigation = () => {
@@ -6,13 +7,13 @@ const Navigation = () => {
       <nav id='navigation'>
         <ul>
           <li>
-            <a href=''>About us</a>
+            <Link to='about-us'>About us</Link>
           </li>
           <li>
-            <a href=''>Offer</a>
+            <Link to='offer'>Offer</Link>
           </li>
           <li>
-            <a href=''>Contact</a>
+            <Link to='contact'>Contact</Link>
           </li>
         </ul>
       </nav>
