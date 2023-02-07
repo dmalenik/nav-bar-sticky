@@ -1,18 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React, { ReactNode } from 'react';
+import ReactDOM, { Root } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
-import Root from './Root';
+import RootComponent from './RootComponent';
 import ErrorPage from './ErrorPage';
 import About from './About';
 import Offer from './Offer';
 import Contact from './Contact';
 import reportWebVitals from './reportWebVitals';
 
-const router = createBrowserRouter([
+type RouteObject = {
+  path: string;
+  element: JSX.Element;
+  errorElement?: JSX.Element;
+};
+type RouteObjectStorage = RouteObject[];
+
+const routes: RouteObjectStorage = [
   {
     path: '/',
-    element: <Root />,
+    element: <RootComponent />,
     errorElement: <ErrorPage />,
   },
   {
@@ -27,16 +34,20 @@ const router = createBrowserRouter([
     path: 'contact',
     element: <Contact />,
   },
-]);
-const root = ReactDOM.createRoot(
+];
+
+const router = createBrowserRouter(routes);
+const root: Root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-root.render(
+const routerProvider: ReactNode = (
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+
+root.render(routerProvider);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
