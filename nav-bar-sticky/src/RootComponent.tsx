@@ -1,7 +1,7 @@
 import Navigation from './Navigation';
-import './Root.css';
+import './RootComponent.css';
 
-const Root = () => {
+const RootComponent = () => {
   return (
     <div id='container'>
       <Navigation />
@@ -9,4 +9,4 @@ const Root = () => {
   );
 };
 
-export default Root;
+export default RootComponent;
