@@ -35,12 +35,10 @@ const routes: RouteObjectStorage = [
     element: <Contact />,
   },
 ];
-
 const router = createBrowserRouter(routes);
 const root: Root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-
 const routerProvider: ReactNode = (
   <React.StrictMode>
     <RouterProvider router={router} />
