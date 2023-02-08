@@ -3,21 +3,19 @@ import './Navigation.css';
 
 const Navigation = () => {
   return (
-    <>
-      <nav id='navigation'>
-        <ul>
-          <li>
-            <Link to='about-us'>About us</Link>
-          </li>
-          <li>
-            <Link to='offer'>Offer</Link>
-          </li>
-          <li>
-            <Link to='contact'>Contact</Link>
-          </li>
-        </ul>
-      </nav>
-    </>
+    <nav id='navigation'>
+      <ul>
+        <li>
+          <Link to='about-us'>About us</Link>
+        </li>
+        <li>
+          <Link to='offer'>Offer</Link>
+        </li>
+        <li>
+          <Link to='contact'>Contact</Link>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
