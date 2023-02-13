@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './Navigation.css';
+import '../styles/Navigation.css';
 
 const Navigation = () => {
   return (
@@ -19,4 +19,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export { Navigation };

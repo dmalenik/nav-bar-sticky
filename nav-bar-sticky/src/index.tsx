@@ -2,11 +2,13 @@ import React, { ReactNode } from 'react';
 import ReactDOM, { Root } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
-import RootComponent from './RootComponent';
-import ErrorPage from './ErrorPage';
-import About from './About';
-import Offer from './Offer';
-import Contact from './Contact';
+import {
+  RootComponent,
+  ErrorPage,
+  About,
+  Offer,
+  Contact,
+} from './components/index';
 import reportWebVitals from './reportWebVitals';
 
 type RouteObject = {

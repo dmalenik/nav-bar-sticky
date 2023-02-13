@@ -1,5 +1,5 @@
-import './Contact.css';
+import '../styles/Contact.css';
 
 const Contact = () => <div>Welcome to the Contact section!</div>;
 
-export default Contact;
+export { Contact };

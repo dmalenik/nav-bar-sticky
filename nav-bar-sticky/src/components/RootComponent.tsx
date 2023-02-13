@@ -1,5 +1,5 @@
-import Navigation from './Navigation';
-import './RootComponent.css';
+import { Navigation } from './index';
+import '../styles/RootComponent.css';
 
 const RootComponent = () => {
   return (
@@ -9,4 +9,4 @@ const RootComponent = () => {
   );
 };
 
-export default RootComponent;
+export { RootComponent };
