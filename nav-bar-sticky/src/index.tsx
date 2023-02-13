@@ -1,6 +1,8 @@
 import React, { ReactNode } from 'react';
 import ReactDOM, { Root } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { store } from './app/store';
 import './index.css';
 import {
   RootComponent,
@@ -43,7 +45,9 @@ const root: Root = ReactDOM.createRoot(
 );
 const routerProvider: ReactNode = (
   <React.StrictMode>
-    <RouterProvider router={createBrowserRouter(routes)} />
+    <Provider store={store}>
+      <RouterProvider router={createBrowserRouter(routes)} />
+    </Provider>
   </React.StrictMode>
 );
 
