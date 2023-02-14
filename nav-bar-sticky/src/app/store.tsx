@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import pageHolderReducer from './pageSlice';
+import changePageReducer from '../components/pageSlice';
 
 const store = configureStore({
   reducer: {
-    pageHolder: pageHolderReducer,
+    changer: changePageReducer,
   },
 });
 
