@@ -9,6 +9,17 @@ const Navigation = () => {
       <ul>
         <li>
           <a
+            href={'/'}
+            onClick={(e) => {
+              e.preventDefault();
+              dispatch(changer(''));
+            }}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
             href='/about'
             onClick={(e) => {
               e.preventDefault();
