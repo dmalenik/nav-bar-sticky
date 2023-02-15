@@ -1,4 +1,4 @@
-import { useAppDispatch } from '../app/hooks';
+import { useAppDispatch } from '../../app/hooks';
 import { changer } from './pageSlice';
 
 const Navigation = () => {
