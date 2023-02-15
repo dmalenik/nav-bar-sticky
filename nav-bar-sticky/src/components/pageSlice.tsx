@@ -21,6 +21,7 @@ const pageSlice = createSlice({
 });
 // action creator
 const { changer } = pageSlice.actions;
+// dispatch handler
 const displayPage = (state: RootState) => state.changer.value;
 
 export { pageSlice, changer, displayPage };
