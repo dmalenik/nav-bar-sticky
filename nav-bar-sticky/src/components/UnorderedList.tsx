@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { useAppDispatch } from '../app/hooks';
 import { changer } from './nav-bar/pageSlice';
+import Item from './Item';
+import Link from './Link';
 
 const StyledUnorderedList = styled.ul``;
 
@@ -9,50 +11,50 @@ const UnorderedList = () => {
 
   return (
     <StyledUnorderedList>
-      <li>
-        <a
+      <Item>
+        <Link
           href={'/'}
-          onClick={(e) => {
-            e.preventDefault();
+          onClick={(event) => {
+            event.preventDefault();
             dispatch(changer(''));
           }}
         >
           Home
-        </a>
-      </li>
-      <li>
-        <a
+        </Link>
+      </Item>
+      <Item>
+        <Link
           href='/about'
-          onClick={(e) => {
-            e.preventDefault();
+          onClick={(event) => {
+            event.preventDefault();
             dispatch(changer('about'));
           }}
         >
           About
-        </a>
-      </li>
-      <li>
-        <a
+        </Link>
+      </Item>
+      <Item>
+        <Link
           href='/offer'
-          onClick={(e) => {
-            e.preventDefault();
+          onClick={(event) => {
+            event.preventDefault();
             dispatch(changer('offer'));
           }}
         >
           Offer
-        </a>
-      </li>
-      <li>
-        <a
+        </Link>
+      </Item>
+      <Item>
+        <Link
           href='/contact'
-          onClick={(e) => {
-            e.preventDefault();
+          onClick={(event) => {
+            event.preventDefault();
             dispatch(changer('contact'));
           }}
         >
           Contact
-        </a>
-      </li>
+        </Link>
+      </Item>
     </StyledUnorderedList>
   );
 };
