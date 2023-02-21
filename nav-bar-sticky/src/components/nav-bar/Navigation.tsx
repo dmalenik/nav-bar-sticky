@@ -1,11 +1,14 @@
 import { useAppDispatch } from '../../app/hooks';
 import { changer } from './pageSlice';
+import styled from 'styled-components';
+
+const StyledNavigation = styled.nav``;
 
 const Navigation = () => {
   const dispatch = useAppDispatch();
 
   return (
-    <nav id='navigation'>
+    <StyledNavigation id='navigation'>
       <ul>
         <li>
           <a
@@ -52,7 +55,7 @@ const Navigation = () => {
           </a>
         </li>
       </ul>
-    </nav>
+    </StyledNavigation>
   );
 };
 
