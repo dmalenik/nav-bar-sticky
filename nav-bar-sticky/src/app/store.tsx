@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import changePageReducer from '../components/un-list/pageSlice';
+import changePageReducer from '../components/nav-bar/pageSlice';
 
 const store = configureStore({
   reducer: {

@@ -1,6 +1,6 @@
-import { Navigation } from './components/Navigation';
+import { Navigation } from './components/nav-bar/Navigation';
 import { useAppSelector } from './app/hooks';
-import { displayPage } from './components/un-list/pageSlice';
+import { displayPage } from './components/nav-bar/pageSlice';
 import Container from './components/Container';
 import Home from './components/Home';
 import About from './components/About';
