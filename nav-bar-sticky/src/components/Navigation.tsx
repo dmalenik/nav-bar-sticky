@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import UnorderedList from '../un-list/UnorderedList';
+import UnorderedList from './un-list/UnorderedList';
 
 const StyledNavigation = styled.nav``;
 
