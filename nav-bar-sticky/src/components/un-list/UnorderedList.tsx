@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { useAppDispatch } from '../app/hooks';
-import { changer } from './nav-bar/pageSlice';
+import { useAppDispatch } from '../../app/hooks';
+import { changer } from '../nav-bar/pageSlice';
 import Item from './Item';
-import Link from './Link';
+import Link from '../Link';
 
 const StyledUnorderedList = styled.ul``;
 
