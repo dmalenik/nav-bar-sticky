@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import UnorderedList from './UnorderedList';
 
-const StyledNavigation = styled.nav``;
-
 const Navigation = () => {
   return (
-    <StyledNavigation id='navigation'>
+    <nav id='navigation'>
       <UnorderedList />
-    </StyledNavigation>
+    </nav>
   );
 };
 
-export { Navigation };
+const StyledNavigation = styled(Navigation)``;
+
+export { StyledNavigation };

@@ -4,8 +4,6 @@ import { changer } from './pageSlice';
 import Item from './Item';
 import Link from './Link';
 
-const StyledUnorderedList = styled.ul``;
-
 const UnorderedList = () => {
   const dispatch = useAppDispatch();
 
@@ -59,4 +57,6 @@ const UnorderedList = () => {
   );
 };
 
-export default UnorderedList;
+const StyledUnorderedList = styled(UnorderedList)``;
+
+export default StyledUnorderedList;
