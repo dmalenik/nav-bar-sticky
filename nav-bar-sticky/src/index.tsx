@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import ReactDOM, { Root } from 'react-dom/client';
 import './index.css';
-import App from './App';
+import StyledApp from './App';
 import { store } from './app/store';
 import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
@@ -11,7 +11,7 @@ const root: Root = ReactDOM.createRoot(
 );
 const appNode: ReactNode = (
   <Provider store={store}>
-    <App />
+    <StyledApp />
   </Provider>
 );
 
