@@ -1,14 +1,18 @@
 import styled from 'styled-components';
-import UnorderedList from './UnorderedList';
+import StyledUnorderedList from './UnorderedList';
 
-const Navigation = () => {
+type NavigationProps = {
+  className?: string;
+};
+
+const Navigation = (props: NavigationProps) => {
   return (
-    <nav id='navigation'>
-      <UnorderedList />
+    <nav id='navigation' className={props.className}>
+      <StyledUnorderedList />
     </nav>
   );
 };
 
 const StyledNavigation = styled(Navigation)``;
 
-export { StyledNavigation };
+export default StyledNavigation;
