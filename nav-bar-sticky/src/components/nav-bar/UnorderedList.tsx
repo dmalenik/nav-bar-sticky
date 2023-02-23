@@ -4,11 +4,15 @@ import { changer } from './pageSlice';
 import Item from './Item';
 import Link from './Link';
 
-const UnorderedList = () => {
+type UnorderedListProps = {
+  className?: string;
+};
+
+const UnorderedList = (props: UnorderedListProps) => {
   const dispatch = useAppDispatch();
 
   return (
-    <StyledUnorderedList>
+    <ul className={props.className}>
       <Item>
         <Link
           href={'/'}
@@ -53,7 +57,7 @@ const UnorderedList = () => {
           Contact
         </Link>
       </Item>
-    </StyledUnorderedList>
+    </ul>
   );
 };
 
