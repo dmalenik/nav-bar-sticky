@@ -1,4 +1,3 @@
-import { StyledNavigation } from './components/nav-bar/Navigation';
 import { useAppSelector } from './app/hooks';
 import { displayPage } from './components/nav-bar/pageSlice';
 import styled from 'styled-components';
@@ -6,6 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Offer from './components/Offer';
 import Contact from './components/Contact';
+import StyledNavigation from './components/nav-bar/Navigation';
 
 type AppProps = {
   className?: string;
@@ -27,4 +27,4 @@ const App = (props: AppProps) => {
 
 const StyledApp = styled(App)``;
 
-export default App;
+export default StyledApp;
