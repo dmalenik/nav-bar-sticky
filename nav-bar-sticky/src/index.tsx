@@ -1,6 +1,7 @@
 import React, { ReactNode, StrictMode } from 'react';
 import ReactDOM, { Root } from 'react-dom/client';
-import './index.css';
+import { createGlobalStyle } from 'styled-components';
+import 'normalize.css';
 import StyledApp from './App';
 import { store } from './app/store';
 import { Provider } from 'react-redux';
@@ -9,8 +10,16 @@ import reportWebVitals from './reportWebVitals';
 const root: Root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+const GlobalStyle = createGlobalStyle`
+    * {
+        box-sizing: border-box;
+    }
+`;
+
 const appNode: ReactNode = (
   <StrictMode>
+    <GlobalStyle />
     <Provider store={store}>
       <StyledApp />
     </Provider>
