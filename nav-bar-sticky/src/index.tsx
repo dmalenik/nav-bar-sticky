@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, StrictMode } from 'react';
 import ReactDOM, { Root } from 'react-dom/client';
 import './index.css';
 import StyledApp from './App';
@@ -10,9 +10,11 @@ const root: Root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 const appNode: ReactNode = (
-  <Provider store={store}>
-    <StyledApp />
-  </Provider>
+  <StrictMode>
+    <Provider store={store}>
+      <StyledApp />
+    </Provider>
+  </StrictMode>
 );
 
 root.render(appNode);
