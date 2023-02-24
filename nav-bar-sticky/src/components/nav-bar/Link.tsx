@@ -3,18 +3,19 @@ import React, { SyntheticEvent } from 'react';
 
 type LinkProps = {
   href: string;
+  className?: string;
   onClick: (event: SyntheticEvent<EventTarget>) => void;
   children: string;
 };
 
-const StyledLink = styled.a``;
-
 const Link = (props: LinkProps) => {
   return (
-    <StyledLink href={props.href} onClick={props.onClick}>
+    <a href={props.href} onClick={props.onClick} className={props.className}>
       {props.children}
-    </StyledLink>
+    </a>
   );
 };
 
-export default Link;
+const StyledLink = styled(Link)``;
+
+export default StyledLink;
