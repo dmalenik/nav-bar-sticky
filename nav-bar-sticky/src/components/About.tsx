@@ -1,7 +1,15 @@
 import styled from 'styled-components';
 
-const StyledAbout = styled.div``;
+type AboutProps = {
+  className?: string;
+};
 
-const About = () => <StyledAbout>Welcome to About section!</StyledAbout>;
+const About = (props: AboutProps) => (
+  <section className={props.className}>
+    <h1>Welcome to About section!</h1>
+  </section>
+);
 
-export default About;
+const StyledAbout = styled(About)``;
+
+export default StyledAbout;

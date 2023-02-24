@@ -1,7 +1,15 @@
 import styled from 'styled-components';
 
-const StyledOffer = styled.div``;
+type OfferProps = {
+  className?: string;
+};
 
-const Offer = () => <StyledOffer>Welcome to Offer section</StyledOffer>;
+const Offer = (props: OfferProps) => (
+  <section className={props.className}>
+    <h1>Welcome to Offer section</h1>
+  </section>
+);
 
-export default Offer;
+const StyledOffer = styled(Offer)``;
+
+export default StyledOffer;

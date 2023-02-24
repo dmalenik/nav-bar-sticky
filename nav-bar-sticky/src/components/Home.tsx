@@ -1,7 +1,15 @@
 import styled from 'styled-components';
 
-const StyledHome = styled.div``;
+type HomeProps = {
+  className?: string;
+};
 
-const Home = () => <StyledHome>Welcome home</StyledHome>;
+const Home = (props: HomeProps) => (
+  <section className={props.className}>
+    <h1>Welcome home</h1>
+  </section>
+);
 
-export default Home;
+const StyledHome = styled(Home)``;
+
+export default StyledHome;

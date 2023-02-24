@@ -1,7 +1,15 @@
 import styled from 'styled-components';
 
-const StyledContact = styled.div``;
+type ContactProps = {
+  className?: string;
+};
 
-const Contact = () => <StyledContact>Welcome to Contact section</StyledContact>;
+const Contact = (props: ContactProps) => (
+  <section className={props.className}>
+    <h1>Welcome to Contact section</h1>
+  </section>
+);
 
-export default Contact;
+const StyledContact = styled(Contact)``;
+
+export default StyledContact;
