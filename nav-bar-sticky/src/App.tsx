@@ -1,10 +1,10 @@
 import { useAppSelector } from './app/hooks';
 import { displayPage } from './components/nav-bar/pageSlice';
 import styled from 'styled-components';
-import Home from './components/Home';
-import About from './components/About';
-import Offer from './components/Offer';
-import Contact from './components/Contact';
+import StyledHome from './components/Home';
+import StyledAbout from './components/About';
+import StyledOffer from './components/Offer';
+import StyledContact from './components/Contact';
 import StyledNavigation from './components/nav-bar/Navigation';
 
 type AppProps = {
@@ -17,10 +17,10 @@ const App = (props: AppProps) => {
   return (
     <div id='container' className={props.className}>
       <StyledNavigation />
-      {currentPage === '/' && <Home />}
-      {currentPage === '/about' && <About />}
-      {currentPage === '/offer' && <Offer />}
-      {currentPage === '/contact' && <Contact />}
+      {currentPage === '/' && <StyledHome />}
+      {currentPage === '/about' && <StyledAbout />}
+      {currentPage === '/offer' && <StyledOffer />}
+      {currentPage === '/contact' && <StyledContact />}
     </div>
   );
 };
