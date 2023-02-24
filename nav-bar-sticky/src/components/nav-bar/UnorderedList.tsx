@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { useAppDispatch } from '../../app/hooks';
 import { changer } from './pageSlice';
-import Item from './Item';
-import Link from './Link';
+import StyledItem from './Item';
+import StyledLink from './Link';
 
 type UnorderedListProps = {
   className?: string;
@@ -13,8 +13,8 @@ const UnorderedList = (props: UnorderedListProps) => {
 
   return (
     <ul className={props.className}>
-      <Item>
-        <Link
+      <StyledItem>
+        <StyledLink
           href={'/'}
           onClick={(event) => {
             event.preventDefault();
@@ -22,10 +22,10 @@ const UnorderedList = (props: UnorderedListProps) => {
           }}
         >
           Home
-        </Link>
-      </Item>
-      <Item>
-        <Link
+        </StyledLink>
+      </StyledItem>
+      <StyledItem>
+        <StyledLink
           href='/about'
           onClick={(event) => {
             event.preventDefault();
@@ -33,10 +33,10 @@ const UnorderedList = (props: UnorderedListProps) => {
           }}
         >
           About
-        </Link>
-      </Item>
-      <Item>
-        <Link
+        </StyledLink>
+      </StyledItem>
+      <StyledItem>
+        <StyledLink
           href='/offer'
           onClick={(event) => {
             event.preventDefault();
@@ -44,10 +44,10 @@ const UnorderedList = (props: UnorderedListProps) => {
           }}
         >
           Offer
-        </Link>
-      </Item>
-      <Item>
-        <Link
+        </StyledLink>
+      </StyledItem>
+      <StyledItem>
+        <StyledLink
           href='/contact'
           onClick={(event) => {
             event.preventDefault();
@@ -55,8 +55,8 @@ const UnorderedList = (props: UnorderedListProps) => {
           }}
         >
           Contact
-        </Link>
-      </Item>
+        </StyledLink>
+      </StyledItem>
     </ul>
   );
 };
