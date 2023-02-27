@@ -6,10 +6,14 @@ type AboutProps = {
 
 const About = (props: AboutProps) => (
   <section className={props.className}>
-    <h1>Welcome to About section!</h1>
+    <h1 className='title'>Welcome to About section!</h1>
   </section>
 );
 
-const StyledAbout = styled(About)``;
+const StyledAbout = styled(About)`
+  .title {
+    background-color: green;
+  }
+`;
 
 export default StyledAbout;

@@ -6,10 +6,14 @@ type OfferProps = {
 
 const Offer = (props: OfferProps) => (
   <section className={props.className}>
-    <h1>Welcome to Offer section</h1>
+    <h1 className='title'>Welcome to Offer section</h1>
   </section>
 );
 
-const StyledOffer = styled(Offer)``;
+const StyledOffer = styled(Offer)`
+  .title {
+    background-color: blue;
+  }
+`;
 
 export default StyledOffer;

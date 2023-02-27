@@ -6,10 +6,14 @@ type ContactProps = {
 
 const Contact = (props: ContactProps) => (
   <section className={props.className}>
-    <h1>Welcome to Contact section</h1>
+    <h1 className='title'>Welcome to Contact section</h1>
   </section>
 );
 
-const StyledContact = styled(Contact)``;
+const StyledContact = styled(Contact)`
+  .title {
+    background-color: purple;
+  }
+`;
 
 export default StyledContact;
