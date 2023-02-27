@@ -52,6 +52,14 @@ const Navigation = (props: NavigationProps) => {
   );
 };
 
-const StyledNavigation = styled(Navigation)``;
+const StyledNavigation = styled(Navigation)`
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  background-color: pink;
+`;
 
 export default StyledNavigation;
