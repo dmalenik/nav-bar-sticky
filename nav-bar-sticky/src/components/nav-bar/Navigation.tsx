@@ -18,6 +18,7 @@ const Navigation = (props: NavigationProps) => {
           event.preventDefault();
           dispatch(changer(''));
         }}
+        className={'menu-offset-left'}
       >
         Home
       </StyledLink>
@@ -27,6 +28,7 @@ const Navigation = (props: NavigationProps) => {
           event.preventDefault();
           dispatch(changer('about'));
         }}
+        className={'menu-offset-right'}
       >
         About
       </StyledLink>
@@ -36,6 +38,7 @@ const Navigation = (props: NavigationProps) => {
           event.preventDefault();
           dispatch(changer('offer'));
         }}
+        className={'menu-offset-right'}
       >
         Offer
       </StyledLink>
@@ -45,6 +48,7 @@ const Navigation = (props: NavigationProps) => {
           event.preventDefault();
           dispatch(changer('contact'));
         }}
+        className={'menu-offset-right'}
       >
         Contact
       </StyledLink>
@@ -60,6 +64,10 @@ const StyledNavigation = styled(Navigation)`
   position: fixed;
   top: 0;
   background-color: pink;
+  opacity: 0.65;
+  :hover {
+    opacity: 1;
+  }
 `;
 
 export default StyledNavigation;
