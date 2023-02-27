@@ -17,18 +17,24 @@ const App = (props: AppProps) => {
   return (
     <div id='container' className={props.className}>
       <StyledNavigation />
-      {currentPage === '/' && <StyledHome />}
-      {currentPage === '/about' && <StyledAbout />}
-      {currentPage === '/offer' && <StyledOffer />}
-      {currentPage === '/contact' && <StyledContact />}
+      {currentPage === '/' && <StyledHome className={'pages-offset-top'} />}
+      {currentPage === '/about' && (
+        <StyledAbout className={'pages-offset-top'} />
+      )}
+      {currentPage === '/offer' && (
+        <StyledOffer className={'pages-offset-top'} />
+      )}
+      {currentPage === '/contact' && (
+        <StyledContact className={'pages-offset-top'} />
+      )}
     </div>
   );
 };
 
 const StyledApp = styled(App)`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export default StyledApp;
