@@ -25,6 +25,10 @@ const App = (props: AppProps) => {
   );
 };
 
-const StyledApp = styled(App)``;
+const StyledApp = styled(App)`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
 
 export default StyledApp;
