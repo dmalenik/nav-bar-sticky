@@ -18,7 +18,7 @@ const Navigation = (props: NavigationProps) => {
           event.preventDefault();
           dispatch(changer(''));
         }}
-        className={'menu-offset-left'}
+        menuOffsetLeft
       >
         Home
       </StyledLink>
@@ -28,7 +28,7 @@ const Navigation = (props: NavigationProps) => {
           event.preventDefault();
           dispatch(changer('about'));
         }}
-        className={'menu-offset-right'}
+        menuOffsetRight
       >
         About
       </StyledLink>
@@ -38,7 +38,7 @@ const Navigation = (props: NavigationProps) => {
           event.preventDefault();
           dispatch(changer('offer'));
         }}
-        className={'menu-offset-right'}
+        menuOffsetRight
       >
         Offer
       </StyledLink>
@@ -48,7 +48,7 @@ const Navigation = (props: NavigationProps) => {
           event.preventDefault();
           dispatch(changer('contact'));
         }}
-        className={'menu-offset-right'}
+        menuOffsetRight
       >
         Contact
       </StyledLink>

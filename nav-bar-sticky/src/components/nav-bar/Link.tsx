@@ -5,6 +5,8 @@ type LinkProps = {
   href: string;
   className?: string;
   onClick: (event: SyntheticEvent<EventTarget>) => void;
+  menuOffsetLeft?: boolean;
+  menuOffsetRight?: boolean;
   children: string;
 };
 
@@ -16,6 +18,9 @@ const Link = (props: LinkProps) => {
   );
 };
 
-const StyledLink = styled(Link)``;
+const StyledLink = styled(Link)`
+  margin-right: ${(props) =>
+    props.menuOffsetLeft ? 'auto' : props.menuOffsetRight ? '20px' : ''};
+`;
 
 export default StyledLink;

@@ -15,14 +15,6 @@ const GlobalStyle = createGlobalStyle`
     * {
         box-sizing: border-box;
     }
-
-    .menu-offset-left {
-        margin-right: auto;
-    }
-
-    .menu-offset-right {
-        margin-right: 20px;
-    }
 `;
 
 const appNode: ReactNode = (
