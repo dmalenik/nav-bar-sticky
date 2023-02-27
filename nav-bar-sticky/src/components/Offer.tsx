@@ -15,7 +15,7 @@ const StyledOffer = styled(Offer)`
   margin-top: ${(props) => (props.pageOffsetTop ? '38px' : '0')};
 
   .title {
-    background-color: blue;
+    background-color: cyan;
   }
 `;
 

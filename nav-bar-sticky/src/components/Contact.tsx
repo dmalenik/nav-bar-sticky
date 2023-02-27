@@ -15,7 +15,7 @@ const StyledContact = styled(Contact)`
   margin-top: ${(props) => (props.pageOffsetTop ? '38px' : '0')};
 
   .title {
-    background-color: purple;
+    background-color: orange;
   }
 `;
 

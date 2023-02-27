@@ -15,7 +15,7 @@ const StyledHome = styled(Home)`
   margin-top: ${(props) => (props.pageOffsetTop ? '38px' : '0')};
 
   .title {
-    background-color: red;
+    background-color: yellow;
   }
 `;
 
