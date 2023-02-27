@@ -20,7 +20,7 @@ const Link = (props: LinkProps) => {
 
 const StyledLink = styled(Link)`
   margin-right: ${(props) =>
-    props.menuOffsetLeft ? 'auto' : props.menuOffsetRight ? '20px' : ''};
+    props.menuOffsetLeft ? 'auto' : props.menuOffsetRight ? '20px' : '0'};
 `;
 
 export default StyledLink;
