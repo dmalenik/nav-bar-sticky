@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 type AboutProps = {
   className?: string;
-  offsetTop?: boolean;
+  pageOffsetTop?: boolean;
 };
 
 const About = (props: AboutProps) => (
@@ -12,7 +12,7 @@ const About = (props: AboutProps) => (
 );
 
 const StyledAbout = styled(About)`
-  margin-top: ${(props) => (props.offsetTop ? '38px' : '0')};
+  margin-top: ${(props) => (props.pageOffsetTop ? '38px' : '0')};
 
   .title {
     background-color: green;

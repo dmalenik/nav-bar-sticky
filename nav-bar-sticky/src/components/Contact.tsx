@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 type ContactProps = {
   className?: string;
-  offsetTop?: boolean;
+  pageOffsetTop?: boolean;
 };
 
 const Contact = (props: ContactProps) => (
@@ -12,7 +12,7 @@ const Contact = (props: ContactProps) => (
 );
 
 const StyledContact = styled(Contact)`
-  margin-top: ${(props) => (props.offsetTop ? '38px' : '0')};
+  margin-top: ${(props) => (props.pageOffsetTop ? '38px' : '0')};
 
   .title {
     background-color: purple;
