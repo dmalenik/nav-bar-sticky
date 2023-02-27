@@ -16,10 +16,6 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
-    .pages-offset-top {
-        margin-top: 38px;
-    }
-
     .menu-offset-left {
         margin-right: auto;
     }

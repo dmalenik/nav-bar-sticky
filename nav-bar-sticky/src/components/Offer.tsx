@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 type OfferProps = {
   className?: string;
+  offsetTop?: boolean;
 };
 
 const Offer = (props: OfferProps) => (
@@ -11,6 +12,8 @@ const Offer = (props: OfferProps) => (
 );
 
 const StyledOffer = styled(Offer)`
+  margin-top: ${(props) => (props.offsetTop ? '38px' : '0')};
+
   .title {
     background-color: blue;
   }

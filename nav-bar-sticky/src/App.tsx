@@ -17,16 +17,10 @@ const App = (props: AppProps) => {
   return (
     <div id='container' className={props.className}>
       <StyledNavigation />
-      {currentPage === '/' && <StyledHome className={'pages-offset-top'} />}
-      {currentPage === '/about' && (
-        <StyledAbout className={'pages-offset-top'} />
-      )}
-      {currentPage === '/offer' && (
-        <StyledOffer className={'pages-offset-top'} />
-      )}
-      {currentPage === '/contact' && (
-        <StyledContact className={'pages-offset-top'} />
-      )}
+      {currentPage === '/' && <StyledHome offsetTop />}
+      {currentPage === '/about' && <StyledAbout offsetTop />}
+      {currentPage === '/offer' && <StyledOffer offsetTop />}
+      {currentPage === '/contact' && <StyledContact offsetTop />}
     </div>
   );
 };

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 type HomeProps = {
   className?: string;
+  offsetTop?: boolean;
 };
 
 const Home = (props: HomeProps) => (
@@ -11,6 +12,8 @@ const Home = (props: HomeProps) => (
 );
 
 const StyledHome = styled(Home)`
+  margin-top: ${(props) => (props.offsetTop ? '38px' : '0')};
+
   .title {
     background-color: red;
   }
