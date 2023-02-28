@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dmalenik/nav-bar-sticky/tree/main/nav-bar-sticky/static/css/main.58462fbc.css",
-    "main.js": "/dmalenik/nav-bar-sticky/tree/main/nav-bar-sticky/static/js/main.f38a32a5.js",
-    "static/js/787.a3e5df33.chunk.js": "/dmalenik/nav-bar-sticky/tree/main/nav-bar-sticky/static/js/787.a3e5df33.chunk.js",
-    "index.html": "/dmalenik/nav-bar-sticky/tree/main/nav-bar-sticky/index.html",
-    "main.58462fbc.css.map": "/dmalenik/nav-bar-sticky/tree/main/nav-bar-sticky/static/css/main.58462fbc.css.map",
-    "main.f38a32a5.js.map": "/dmalenik/nav-bar-sticky/tree/main/nav-bar-sticky/static/js/main.f38a32a5.js.map",
-    "787.a3e5df33.chunk.js.map": "/dmalenik/nav-bar-sticky/tree/main/nav-bar-sticky/static/js/787.a3e5df33.chunk.js.map"
+    "main.css": "/nav-bar-sticky/static/css/main.58462fbc.css",
+    "main.js": "/nav-bar-sticky/static/js/main.b59684cd.js",
+    "static/js/787.a3e5df33.chunk.js": "/nav-bar-sticky/static/js/787.a3e5df33.chunk.js",
+    "index.html": "/nav-bar-sticky/index.html",
+    "main.58462fbc.css.map": "/nav-bar-sticky/static/css/main.58462fbc.css.map",
+    "main.b59684cd.js.map": "/nav-bar-sticky/static/js/main.b59684cd.js.map",
+    "787.a3e5df33.chunk.js.map": "/nav-bar-sticky/static/js/787.a3e5df33.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.58462fbc.css",
-    "static/js/main.f38a32a5.js"
+    "static/js/main.b59684cd.js"
   ]
 }
