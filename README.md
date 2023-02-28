@@ -1,4 +1,4 @@
-# The Sticky Nav Bar Task
+# The Sticky Nav Bar
 
 - Goal: a moving nav bar (sticky)
 - Goal's features:
