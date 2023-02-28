@@ -19,4 +19,4 @@ const StyledHome = styled(Home)`
   }
 `;
 
-export default StyledHome;
+export { StyledHome };

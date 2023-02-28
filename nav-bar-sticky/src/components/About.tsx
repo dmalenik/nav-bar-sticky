@@ -19,4 +19,4 @@ const StyledAbout = styled(About)`
   }
 `;
 
-export default StyledAbout;
+export { StyledAbout };

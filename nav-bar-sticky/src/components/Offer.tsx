@@ -19,4 +19,4 @@ const StyledOffer = styled(Offer)`
   }
 `;
 
-export default StyledOffer;
+export { StyledOffer };

@@ -1,11 +1,13 @@
 import { useAppSelector } from './app/hooks';
 import { displayPage } from './components/nav-bar/pageSlice';
 import styled from 'styled-components';
-import StyledHome from './components/Home';
-import StyledAbout from './components/About';
-import StyledOffer from './components/Offer';
-import StyledContact from './components/Contact';
-import StyledNavigation from './components/nav-bar/Navigation';
+import {
+  StyledHome,
+  StyledAbout,
+  StyledOffer,
+  StyledContact,
+  StyledNavigation,
+} from './components/index';
 
 type AppProps = {
   className?: string;

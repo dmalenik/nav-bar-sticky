@@ -19,4 +19,4 @@ const StyledContact = styled(Contact)`
   }
 `;
 
-export default StyledContact;
+export { StyledContact };

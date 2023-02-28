@@ -70,4 +70,4 @@ const StyledNavigation = styled(Navigation)`
   }
 `;
 
-export default StyledNavigation;
+export { StyledNavigation };
