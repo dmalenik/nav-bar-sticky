@@ -21,6 +21,16 @@ const Link = (props: LinkProps) => {
 const StyledLink = styled(Link)`
   margin-right: ${(props) =>
     props.menuOffsetLeft ? 'auto' : props.menuOffsetRight ? '20px' : '0'};
+  :active,
+  :hover,
+  :link,
+  :visited {
+    text-decoration: none;
+  }
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: ${(props) => (props.children === 'Home' ? 'bolder' : 'normal')};
+  color: #fff;
 `;
 
 export default StyledLink;
