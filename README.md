@@ -11,5 +11,5 @@
 - Additional notes:
 
 1. RTK holds the current nav bar's state
-2. don't use react router to serve the pages
+2. don't use React Router to serve the pages
 3. Styled Components manages the styles
