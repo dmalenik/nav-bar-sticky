@@ -58,13 +58,13 @@ const Navigation = (props: NavigationProps) => {
 
 const StyledNavigation = styled(Navigation)`
   width: 100%;
-  padding: 10px;
+  padding: 15px 30px;
   display: flex;
   justify-content: flex-end;
   position: fixed;
   top: 0;
-  background-color: pink;
-  opacity: 0.65;
+  background-color: #595856;
+  opacity: 0.5;
   :hover {
     opacity: 1;
   }
