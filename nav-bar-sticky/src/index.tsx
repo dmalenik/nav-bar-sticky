@@ -1,51 +1,32 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, StrictMode } from 'react';
 import ReactDOM, { Root } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './index.css';
-import RootComponent from './RootComponent';
-import ErrorPage from './ErrorPage';
-import About from './About';
-import Offer from './Offer';
-import Contact from './Contact';
+import { createGlobalStyle } from 'styled-components';
+import 'normalize.css';
+import StyledApp from './App';
+import { store } from './storage/store';
+import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
-
-type RouteObject = {
-  path: string;
-  element: JSX.Element;
-  errorElement?: JSX.Element;
-};
-type RouteObjectStorage = RouteObject[];
-
-const routes: RouteObjectStorage = [
-  {
-    path: '/',
-    element: <RootComponent />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: 'about-us',
-    element: <About />,
-  },
-  {
-    path: 'offer',
-    element: <Offer />,
-  },
-  {
-    path: 'contact',
-    element: <Contact />,
-  },
-];
 
 const root: Root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-const routerProvider: ReactNode = (
-  <React.StrictMode>
-    <RouterProvider router={createBrowserRouter(routes)} />
-  </React.StrictMode>
+
+const GlobalStyle = createGlobalStyle`
+    * {
+        box-sizing: border-box;
+    }
+`;
+
+const appNode: ReactNode = (
+  <StrictMode>
+    <GlobalStyle />
+    <Provider store={store}>
+      <StyledApp />
+    </Provider>
+  </StrictMode>
 );
 
-root.render(routerProvider);
+root.render(appNode);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
