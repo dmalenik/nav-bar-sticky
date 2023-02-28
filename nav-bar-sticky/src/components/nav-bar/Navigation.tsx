@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import StyledLink from './Link';
-import { useAppDispatch } from '../../app/hooks';
+import { useAppDispatch } from '../../storage/hooks';
 import { changer } from './pageSlice';
 
 type NavigationProps = {

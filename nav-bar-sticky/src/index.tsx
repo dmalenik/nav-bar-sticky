@@ -3,7 +3,7 @@ import ReactDOM, { Root } from 'react-dom/client';
 import { createGlobalStyle } from 'styled-components';
 import 'normalize.css';
 import StyledApp from './App';
-import { store } from './app/store';
+import { store } from './storage/store';
 import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
 
